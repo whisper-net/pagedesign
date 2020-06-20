@@ -1,0 +1,597 @@
+body{
+    /*background: url(../images/bac.gif) repeat #0a0a0a !important;
+    background-size: 1920px auto;
+    color: #fff;*/
+    /*font: 12px/1 "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+    font-family: "SimSun";*/
+    margin: 0;
+    padding: 0;
+    font: 14px "微软雅黑", Arial, Helvetica, sans-serif;
+    background: url(../images/bg.png) no-repeat top 60px center #96CEB4;
+    background-attachment: fixed;
+    color: #555;
+}
+/*清除浏览器默认样式*/
+div,span,h1,h2,h3,h4,h5,ol,ul,li,p,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color: #555;
+}
+ol,ul,li{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #299982;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: #165246 0px 1px 5px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+.inner{
+    width: 1200px;
+    margin:0 auto;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.f_l {
+    float: left;
+}
+.f_r {
+    float: right;
+}
+
+/*--Begin-------------------------------index.html----------------------------------*/
+/*一、页眉导航部分*/
+/*导航部分*/
+/* nav */
+.topnav { 
+    width: 100%; 
+    overflow: hidden; 
+}  
+/*导航颜色*/
+nav {
+    width: 1200px;
+    margin: auto;
+    color: #999;
+    line-height: 32px;
+    background: url(../images/logo.png) no-repeat left 10px top 13px;
+}
+nav ul { 
+    text-align: right; 
+    height: 46px; 
+    line-height: 46px; 
+}
+nav ul li {  
+    display: inline; 
+    font-size: 16px; 
+    padding: 0px 20px;  
+}
+nav ul li a { color: #fff ;}
+
+/*二、正文部分*/
+article{
+    width: 1100px;
+    padding: 50px;
+    background: rgba(255,255,255,0.5);
+     margin: auto; 
+    overflow: hidden;
+}
+/*2.1轮播图片*/
+.bigcontainer{
+    background-color: rgba(33, 158, 151, 0.8);
+}
+.wrap {
+    height: 300px;
+    position: relative;
+    padding-top: 30px;
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.wrap ul{
+    position:absolute;
+} 
+.wrap ul li{
+    height:170px;
+}
+/*图片宽度设置为1100px*/
+.wrap ul li img{
+    width: 1100px;
+}
+/*下方5个图片的点点*/
+.wrap ol{
+    position: absolute;
+    width: 1100px;
+    bottom: 10px;
+    text-align: center;
+}
+/*设置点的大小形状颜色等*/
+.wrap ol li{
+    height: 20px;
+    width: 20px;
+    background: #ccc;
+    color: #ccc;
+    line-height: center;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+/*该图片显示时 点变为红色*/
+.wrap ol .on{
+    background:#f36d62;
+    color:#f36d62;
+}
+/*2.2中间分隔线*/
+.line4{
+    background: url(../images/line4.png) repeat-x 0 center;
+    height: 50px;
+    background-size: 50% 100%;
+    margin: 10px;
+}
+/*2.3我的博客部分*/
+.myblog{
+    background: #fff;
+    overflow: hidden;
+    width: 68%;
+    float: left;
+}
+/*标题 绿底白字*/
+.hometitle{
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #349075;
+    color: #fff;
+}
+/*博客内容显示*/
+.myblog ul{
+    padding: 10px;
+    overflow: hidden;
+}
+.myblog li {
+    border-bottom: #ccc 1px solid;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+/*滑过添加阴影效果*/
+.myblog li:hover{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-radius: 5px;
+}
+/*博客标题*/
+.blogtitle{
+    line-height: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+/*“博客日记”显示，绿底白字*/
+.blogtitle span {
+    background: #299982;
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 20px;
+}
+.blogtitle span a{    
+    color: #FFF;
+}
+/*标题悬停变黑*/
+.blogtitle a:hover{
+    color: #000;
+}
+/*博客图片显示*/
+.blogpic {
+    overflow: hidden;
+    width: 30%;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+/*博客具体内容显示*/
+.blogcontent{
+    color: #888;
+    line-height: 24px;
+    /*将空格忽略*/
+    white-space: normal;
+    display: block;
+    overflow: hidden;
+    font-family: 'Microsoft YaHei';
+}
+/*鼠标悬停变黑*/
+.blogcontent:hover{
+    color:#000;
+}
+/*每篇博客下方关于博客信息的显示*/
+.autor {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+}
+/*各项内容的布局*/
+.autor span {
+    margin: 0 10px 0 0;
+    padding-left: 20px;
+}
+/*阅读评论数字显示、阅读更多部分*/
+.autor span a {
+    color: #096;
+}
+/*博客时间、浏览、评论的图片显示*/
+.dtime {
+    background: url(../images/posttime.gif) no-repeat left center;
+}
+.viewnum1 {
+    background: url(../images/iread.png) no-repeat left center;
+}
+.viewnum2 {
+    background: url(../images/icomment.png) no-repeat left center;
+}
+/*阅读更多 字体比前面的大一些*/
+.more {
+    font-size: 14px;
+}
+
+/*2.4点击排行部分*/
+/*按照每篇博客的浏览量，从高到低简略显示*/
+/*右边的大框*/
+.rightbox {
+    width: 30%;
+    overflow: hidden;
+    float: right;
+}
+/*白底显示*/
+.paihang {
+    background: #FFF;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+/*所有显示的博客边距*/
+.paihang ul {
+    padding: 10px;
+}
+/*每一个博客的框*/
+.paihang ul li {
+    border-bottom: solid 1px #EAEAEA;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+}
+/*滑过添加阴影效果*/
+.paihang ul li:hover{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-radius: 5px;
+}
+/*博客标题显示*/
+.paihang ul li a{
+    height: 30px;
+    /*文字只显示一行*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+/*博客悬停字变黑*/
+.paihang ul li a:hover {
+    color: #000;
+}
+/*博客内容显示*/
+.paihang ul li p {
+    line-height: 24px;
+    color: #888;
+}
+/*博客悬停字变黑*/
+.paihang ul li p:hover {
+    color: #000;
+}
+/*博客小图显示*/
+.paihang ul li img {
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+    display: block;
+    border: #efefef 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+/*2.5 我的微信部分*/
+.weixin {
+    width: 100%;
+    background: #FFF;
+    overflow: hidden;
+    margin: 20px 0;
+}
+/*我的图片显示*/
+.weixin ul img{
+    width: 100%;
+}
+/*三、页脚部分*/
+/*背景为黑色，中间显示*/
+footer {
+    width: 100%;
+    background: #333;
+    color: #a5a4a4;
+    text-align: center;
+    padding: 20px 0;
+}
+footer a{
+    color: #a5a4a4;
+}
+/*--End---------------------------------index.html------------------------------------*/
+
+/*--Begin-------------------------------aboutme.html----------------------------------*/
+/*关于我页标题*/
+.title {
+    padding: 30px 0 10px 0;
+    font-size: 18px;
+    border-bottom: #dbf7ea 1px solid;
+    overflow: hidden;
+    color: #1f7d6a;
+    text-shadow: #fff 1px 1px 2px;
+}
+/*个性文字靠右显示*/
+.title span{
+    float: right;
+    font-weight: normal;
+    font-size: 16px;
+}
+/*下方所有部分*/
+.ab_box {
+    border-top: #a6c3bd 1px solid;
+    padding: 20px 0;
+    overflow: hidden;
+    background: rgba(255,255,255,0.8);
+}
+/*左边个人介绍部分*/
+.ab_leftbox {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+/*文字显示*/
+.myintor {
+    line-height: 24px;
+    padding: 20px;
+    text-align: justify;
+}
+/*右边我的个人信息部分*/
+.ab_rightbox {
+    width: 28%;
+    float: right;
+    overflow: hidden;
+    margin-right: 20px;
+}
+/*关于我*/
+.aboutme {
+    overflow: hidden;
+    background: #fff;
+}
+/*圆形头像*/
+.avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;/*这里我准备的图片就是圆形的，但如果本来不是，则可以通过这句变成圆形*/
+    margin: 10px auto 0;
+}
+/*图片大小*/
+.avatar img{
+    width: 100px;
+}
+/*个人信息*/
+.ab_mycontent {
+    line-height: 30px;
+    padding: 10px;
+}
+/*四项信息的显示*/
+.ab_mycontent p {
+    background: #f6f6f6;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px;
+}
+/*--End---------------------------------about.html-----------------------------------*/
+/*--Begin-------------------------------message.html----------------------------------*/
+/*左边留言部分 form表单*/
+/*左上方留言框最外层*/
+.messleft_box{
+    padding: 0 20px;
+    text-align: justify;
+}
+/*留言框*/
+.mess_boxp{
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 1px #ccc;
+}
+/*留言text框*/
+.msgcon{
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    background-attachment: scroll;/*超出高度部分显示滚动条*/
+    resize: none;/*禁止textarea拉动*/
+    border: none;
+}
+/*发送按钮*/
+.sendmsg{
+    border: 0;
+    background: #349075;
+    height: 35px;
+    width: 100px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*左下方显示已有留言*/
+/*留言数量*/
+.msgnum{
+    padding-top: 20px;
+}
+.onemsg{
+    margin: 30px 0;
+    clear: both;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+/*用户头像*/
+.msgpic{
+    float: left;
+}
+/*右侧相关信息*/
+.onemsgcon{
+    float: right;
+    width: 90%;
+}
+/*留言昵称时间行*/
+.msgc_title{
+    margin-bottom: 10px;
+}
+/*昵称*/
+.msgc_name{
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+}
+/*时间*/
+.msgc_time{
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*内容*/
+.msgc_text{
+    line-height: 26px;
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #555;
+}
+
+
+/*右边我的标签*/
+.mytags{    
+    overflow: hidden;
+    background: #fff;
+}
+/*我的标签表格*/
+.mytags table {
+    border: solid #fff;
+    border-width: 1px 0px 0px 1px;
+    background: #e8f1e3;
+    width: 100%;    
+    margin-top: 5px;
+}
+/*普通列的样式，平均分配各列宽度，3列*/
+.mytags table tbody tr td {
+    border: solid #fff;
+    border-width: 0px 1px 1px 0px;
+    padding: 2px 10px;
+    color: #5A5A5A;
+    width: 33%;
+    height: 32px;
+}
+/*标签滑过样式*/
+.mytags table tbody tr td:hover{
+    box-shadow: 2px 2px 2px 2px #fff;
+    font-size: 16px;
+    color: #000;
+}
+/*标题列的样式*/
+.tdhead{
+    background-color: #9acc89;
+    height: 32px;
+    font-size: 15px;
+}
+
+/*--End---------------------------------message.html-----------------------------------*/
+/*--Begin-------------------------------project.html----------------------------------*/
+/*绿底白字显示项目名称*/
+.appname{
+    border: 0;
+    background: #349075;
+    height: 25px;
+    width: 100px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 7px;
+    margin: 20px 0;
+}
+/*项目简介*/
+.appinfo{
+    border-top: #a6c3bd 1px solid;
+    padding: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.8);
+}
+/*展示项目图片*/
+.appimagestable{    
+    width: 100%;  
+}
+/*普通列的样式，平均分配各列宽度,4列*/
+.appimagestable tbody tr td {
+    padding: 20px 23px;
+    width: 25%;
+}
+/*每张图片显示框*/
+.oneimgbox{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    height: 395px;
+}
+/*鼠标滑过样式*/
+.oneimgbox:hover {
+    background: #fff;
+    width: 105%;
+    text-align: center;
+}
+/*列中图片*/
+.appimagestable tbody tr td img{
+    width: 86%;
+    padding-top: 15px;
+}
+/*图片下方文字介绍*/
+.imginfo{
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #1f7d6a;
+    color: #fff;
+}
