@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>留言</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head> 
+    <body>
+        <div>
+            <!--top logo和导航栏-->
+            <header>
+                <div class="inner topnav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" title="首页">首页</a></li>
+                            <li><a href="about.html" title="关于我">关于我</a></li>
+                            <li><a href="project.html" title="项目">项目</a></li>
+                            <li><a href="message.html" title="留言">留言</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--正文内容部分-->
+            <article>
+                <h2 class="title">
+                    <span>雁过无痕，但我希望知道你也曾来过。</span>    
+                    留言
+                </h2>              
+                <!--下方我的信息部分 大方向上布局与关于我 页样式相同分为左右部分-->
+                <div class="ab_box">
+                    <!--左边为留言框-分为左上、左下-->
+                    <div class="ab_leftbox">
+                        <div class="messleft_box">
+                            <!--左上方显示留言框-->
+                            <!--因为textarea设置了width为100%，所以添加下面让textarea看起来像是有padding的样子-->
+                            <div class="mess_boxp">
+                                <form action="submit">
+                                    <textarea class="msgcon" placeholder="写你所想，期待你的一字一句..."></textarea> 
+                                    <input class="sendmsg" type="submit" value="发布">     
+                                </form>
+                            </div>
+                            <!--左下方显示已存在留言-->
+                            <div class="mymsg_box">
+                                <h3 class="msgnum">5条评论</h3>
+                                <div class="onemsg">
+                                    <div class="msgpic">
+                                        <img id="pl-userpic" src="images/msgavatar.png">
+                                    </div>
+                                    <div class="onemsgcon">
+                                        <div class="msgc_title">
+                                            <span class="msgc_name">小火车</span> 
+                                            <span class="msgc_time">2020/06/01 11:30</span>
+                                        </div>
+                                        <div class="msgc_text">我来啦！</div>
+                                    </div>
+                                </div>
+                                <div class="onemsg">
+                                    <div class="msgpic">
+                                        <img id="pl-userpic" src="images/msgavatar.png">
+                                    </div>
+                                    <div class="onemsgcon">
+                                        <div class="msgc_title">
+                                            <span class="msgc_name">逍遥人</span> 
+                                            <span class="msgc_time">2020/05/21 15:20</span>
+                                        </div>
+                                        <div class="msgc_text">不错不错。</div>
+                                    </div>
+                                </div>
+                                <div class="onemsg">
+                                    <div class="msgpic">
+                                        <img id="pl-userpic" src="images/msgavatar.png">
+                                    </div>
+                                    <div class="onemsgcon">
+                                        <div class="msgc_title">
+                                            <span class="msgc_name">嘟嘟嘟</span> 
+                                            <span class="msgc_time">2020/05/12 17:36</span>
+                                        </div>
+                                        <div class="msgc_text">有点意思</div>
+                                    </div>
+                                </div>
+                                <div class="onemsg">
+                                    <div class="msgpic">
+                                        <img id="pl-userpic" src="images/msgavatar.png">
+                                    </div>
+                                    <div class="onemsgcon">
+                                        <div class="msgc_title">
+                                            <span class="msgc_name">哈妮妮</span> 
+                                            <span class="msgc_time">2020/05/02 13:20</span>
+                                        </div>
+                                        <div class="msgc_text">我喜欢有趣的人</div>
+                                    </div>
+                                </div>
+                                <div class="onemsg">
+                                    <div class="msgpic">
+                                        <img id="pl-userpic" src="images/msgavatar.png">
+                                    </div>
+                                    <div class="onemsgcon">
+                                        <div class="msgc_title">
+                                            <span class="msgc_name">锅包肉</span> 
+                                            <span class="msgc_time">2020/04/01 07:20</span>
+                                        </div>
+                                        <div class="msgc_text">第一！</div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右边部分显示我的标签-分为右上、右下-->
+                    <div class="ab_rightbox">
+                        <!--右上方显示我的个人信息-->
+                        <div class="mytags">
+                            <h2 class="hometitle">我的标签</h2>
+                            <!--我的个性标签-->
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <!--一列相当于3列-->
+                                        <td class="td tdhead" colspan="3">
+                                            <strong>个性</strong>
+                                        </td>
+                                    </tr>
+                                    <!--每行显示3列-->
+                                    <tr>
+                                        <td>冷幽默</td>
+                                        <td>搞笑</td>
+                                        <td>收藏</td>  
+                                    </tr>
+                                    <tr>
+                                        <td>摇滚</td>
+                                        <td>民谣</td>
+                                        <td>品茶</td>
+                                    </tr>
+                                    <tr>
+                                        <td>红楼</td>
+                                        <td>火影</td>
+                                        <td>篮球</td> 
+                                    </tr>
+                                    <tr>                                     
+                                        <td>懒癌晚期</td>
+                                        <td>拖延</td>
+                                        <td>非酋</td>
+                                    </tr>
+                                    <tr>                                     
+                                        <td>唱诗班</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--我的学习标签-->
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <!--一列相当于3列-->
+                                        <td class="td tdhead" colspan="3">
+                                            <strong>学习</strong>
+                                        </td>
+                                    </tr>
+                                    <!--每行显示3列-->
+                                    <tr>
+                                        <td>JAVA</td>
+                                        <td>前端</td>
+                                        <td>Vue</td>  
+                                    </tr>
+                                    <tr>
+                                        <td>Python</td>
+                                        <td>R</td>
+                                        <td>深度学习</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C、C++</td>
+                                        <td>数据库</td>
+                                        <td>小程序</td> 
+                                    </tr>
+                                    <tr>                                     
+                                        <td>数据分析</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+                        <!--右边的下方显示我的微信-->
+                        <div class="weixin">
+                            <!--标题部分共用honetitle-->
+                            <h2 class="hometitle">个人微信</h2>
+                            <ul>
+                                <img src="images/weixin.jpg">
+                            </ul>
+                        </div>   
+                    </div><!--右边部分结束-->
+                </article> 
+                <footer>
+                <p>
+                    Design by<a href="index.html"> 卢媛媛 | 个人网站</a>
+                </p>
+            </footer>      
+        </div>  
+    </body>
+</html>
