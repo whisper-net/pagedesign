@@ -1,0 +1,47 @@
+/*------------------------------------------blogx.html---------------------------------------------*/
+/*博客显示背景框*/
+.blogdetailbox {
+    width: 100%;
+    background: #FFF;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.blogview{
+    padding: 20px;
+}
+/*标题显示*/
+.news_title {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 20px 0;
+    color: #333;
+}
+/*博客相关信息显示*/
+.news_author{
+    width: 100%;
+    color: #999;
+    line-height: 18px;
+}
+/*博客标签*/
+.tags{
+    margin: 10px;
+}
+/*绿底白字*/
+.tags span{
+    background: #299982;
+    padding: 3px 8px;
+    color: #fff;
+    border-radius: 5px;
+}
+/*正文内容*/
+.blog_content{
+    line-height: 24px;
+    color: #555;
+    font-size: 15px;
+    border-top: 2px solid #555;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.blog_content a{
+    color: #6795b5;
+}
