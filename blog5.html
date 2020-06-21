@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tensorflow神经网络对MNIST数据集分类识别</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/info.css">
+    </head> 
+    <body>
+        <div>
+            <!--top logo和导航栏-->
+            <header>
+                <div class="inner topnav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" title="首页">首页</a></li>
+                            <li><a href="about.html" title="关于我">关于我</a></li>
+                            <li><a href="project.html" title="项目">项目</a></li>
+                            <li><a href="message.html" title="留言">留言</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--正文内容部分-->
+            <article>
+                <h2 class="title">   
+                    博客
+                </h2>   
+                <!--博客完整内容-->
+                <div class="blogdetailbox">           
+                <div class="blogview">
+                    <h3 class="news_title">tensorflow神经网络对MNIST数据集分类识别</h3>
+                    <div class="news_author">
+                        <span>2020-04-14 16:47:51</span>
+                        <span class="viewnum1 f_l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览（0）</span>
+                        <div class="tags">
+                            <span>python</span> &nbsp; 
+                            <span>tensflow</span>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <strong>tensorflow神经网络对MNIST数据集分类识别</strong><br><br>
+                        tensorflow包的安装<br>
+                        我是在控制台中直接输入<br><br>
+                        <img src="images/blog5_1.png"><br><br>
+                        首先需要有tensorflow包，这里的**-i https://pypi.douban.com/simple**可以大大加快下载速度，下载其他的所有包也都可以加上这个，特别是一些比较大的包，避免在下载中由于下载超时而失败的情况。<br><br>
+                        <img src="images/blog5_2.png"><br>
+                        如果在过程中需要重新装可以先uninstall再重新装<br><br>
+                        <img src="images/blog5_3.png"><br><br>
+                        <img src="images/blog5_4.png"><br><br>
+                        处理数据<br><br>
+                        <img src="images/blog5_5.png"><br><br>
+                        （一）mnist数据<br>
+                        下载tensorflow（pip install tensorflow）<br><br>
+                        下载下来的是tensorflow2.0版本，后来下载通过input_data下载mnist数据集时，发现tensorflow_core\examples下没有tutorials，下载后添加进去数据集下载成功。<br>
+                        通过tensflow提供的数据处理模块把数据读取出来，读取模式为one_hot=True，即标签值返回的是one_hot值，总共10列，第一次运行会下载到MNIST_data文件夹下，后将数据解压，解压好的数据放到mnist变量。<br>
+                        下载下来的mnist数据集无法直接查看，通过语句查看下载下来的数据。<br>
+                        通过reshape函数可视化样本，将其手写图片直观显示出来以便了解数据。<br>
+                        将数据转化为csv需要提前将下载下来的数据解压，然后将数据存入csv中进行查看，不过由于后面的模型中用到的数据是直接下载下来的mnist原始数据后进行处理，所以这里导出的csv只是作为对mnist数据的了解。<br>
+                        第一列数据显示的是标签值，后面共784列（pixel0~pixel783）<br>
+                    </div>
+                </div>
+            </article> 
+            <!--页脚-->
+            <footer>
+                <p>
+                    Design by<a href="index.html"> 卢媛媛 | 个人网站</a>
+                </p>
+            </footer>      
+        </div>  
+    </body>
+</html>

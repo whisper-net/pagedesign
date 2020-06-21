@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>解决sdk manager打开以后只有 Android SDK Tools问题</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/info.css">
+    </head> 
+    <body>
+        <div>
+            <!--top logo和导航栏-->
+            <header>
+                <div class="inner topnav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" title="首页">首页</a></li>
+                            <li><a href="about.html" title="关于我">关于我</a></li>
+                            <li><a href="project.html" title="项目">项目</a></li>
+                            <li><a href="message.html" title="留言">留言</a></li>     
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--正文内容部分-->
+            <article>
+                <h2 class="title">   
+                    博客
+                </h2>   
+                <!--博客完整内容-->
+                <div class="blogdetailbox">           
+                <div class="blogview">
+                    <h3 class="news_title">解决sdk manager打开以后只有 Android SDK Tools问题</h3>
+                    <div class="news_author">
+                        <span>2020-04-14 17:26:09</span>
+                        <span class="viewnum1 f_l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览（680）</span>
+                        <div class="tags">
+                            <span>Android</span>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <strong>解决summernote编辑器引入时图标显示为方框问题</strong><br><br>
+                        使用summernote编辑器时，首先看了一下官网的使用介绍
+                        <a href="https://summernote.org/getting-started/.">https://summernote.org/getting-started/.</a>
+                        用它提供的示例代码试了一下，可以成功。<br><br>
+                        <img src="images/blog4_1.png"><br>
+                        <img src="images/blog4_2.png">
+                            但是它用的js、css文件并不是本地的文件，所以想着下载下来就可以了，然而事情并没有这么简单。<br>
+                            直接进入网址 Ctrl + s<br>
+                            <a href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css">https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css</a><br>
+                            <a href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js">https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js</a><br><br>
+                            下载summernote.min.css和summernote.min.js文件到我的项目中，然后引入本地文件，结果，结果，结果就这样了。<br><br>
+                        <img src="images/blog4_3.png"><br>
+                        emmmm 这是什么玩意，图标怎得不出来呢？当然是出错了，F12找错<br><br>
+                        <img src="images/blog4_4.png"><br>
+                        <img src="images/blog4_5.png"><br>
+                        说我的css/font/文件夹下没有这几个文件，于是找，加。<br>
+                        文件可以直接从官网下载，里面有个font文件夹，拖到自己的css文件夹里面就可以了。<br><br>
+                        不想下载那么多东西的话，也可以只下载这几个图标文件，讲过我的分析啊，从官网上面例子中引用的js、css网址肯定可以找到font文件夹，看summernote.min.css的网址<br>
+                        <a href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css">https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css</a><br>
+                        我们到这个dist文件夹下面看一看<br>
+                        <a href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/">https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/</a><br>
+                        哎呦呦，找到了，这不就是font文件夹嘛，点进去下载单个文件，不过还得自己在项目的css文件夹下建一个font文件夹，然后把文件放进去，也挺麻烦，不如直接从官网下载压缩包直接找到font文件夹，我也不知道图啥，瞎搞这玩意，浪费时间。<br><br>
+                        <img src="images/blog4_6.png"><br><br>
+                        最后成功，方框消失！<br><br>
+                        <img src="images/blog4_7.png"><br>
+                    </div>
+                </div>
+            </article> 
+            <!--页脚-->
+            <footer>
+                <p>
+                    Design by<a href="index.html"> 卢媛媛 | 个人网站</a>
+                </p>
+            </footer>      
+        </div>  
+    </body>
+</html>
